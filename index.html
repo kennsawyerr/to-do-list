@@ -1,0 +1,101 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>To do List</title>
+  </head>
+  <body>
+    <h1 class="blue container align margin-40">To-Do List</h1>
+    <section class="container flex">
+      <div class="text-box">
+        <div class="day">
+          <div class="date" id="date">29</div>
+
+          <ul>
+            <li id="current-day">Monday</li>
+            <li id="current-year">March, 2024</li>
+          </ul>
+        </div>
+
+        <form class="task-form hidden container" id="form">
+          <div class="task-form-body">
+            <div id="cancel-btn">
+              <i class="fa fa-times"></i>
+            </div>
+
+            <label class="task-form-label" for="title-input">Title</label>
+            <input
+              required
+              type="text"
+              class="form-control"
+              id="title-input"
+              value=""
+            />
+            <label class="task-form-label" for="date-input">Date</label>
+            <input type="date" class="form-control" id="date-input" value="" />
+            <label class="task-form-label" for="description-input"
+              >Description</label
+            >
+            <textarea
+              class="form-control"
+              id="description-input"
+              cols="30"
+              rows="5"
+            ></textarea>
+          </div>
+          <div class="task-form-footer">
+            <button
+              id="add-or-update-task-btn"
+              class="btn large-btn"
+              type="submit"
+            >
+              Add Task
+            </button>
+          </div>
+
+          <hr />
+        </form>
+
+        <dialog id="confirm-close-dialog">
+          <form method="dialog">
+            <p class="discard-message-text">Discard unsaved changes?</p>
+            <div class="confirm-close-dialog-btn-container">
+              <button id="cancel" class="btn">Cancel</button>
+              <button id="discard-btn" class="btn">Discard</button>
+            </div>
+          </form>
+        </dialog>
+
+        <ul>
+          <li>
+            <h3>6:30AM - Meditation</h3>
+            <p>Meditation for 30mins</p>
+          </li>
+
+          <li>
+            <h3>6:30PM - Gym</h3>
+            <p>Cardio for 10mins</p>
+          </li>
+        </ul>
+
+        <div class="plus-icon" id="task-btn">
+          <img src="plus.png" class="plus-img" alt="plus image" />
+        </div>
+      </div>
+      <div class="img-holder">
+        <img
+          src="whiteboard mockup.png"
+          alt="animated-board"
+          class="animated-board"
+        />
+      </div>
+    </section>
+
+    <script src="index.js"></script>
+  </body>
+</html>

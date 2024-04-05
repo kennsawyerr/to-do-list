@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+/* background: url(".png");
+background: url(".png");
+background: #EDEFFB;
+
+ */
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+label,
+input,
+textarea,
+button {
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+  padding: 5px 0;
+}
+body {
+  background-color: #edeffb;
+  color: black;
+  font-family: "Roboto", sans-serif;
+}
+
+.blue {
+  color: blue;
+}
+
+.align {
+  text-align: center;
+}
+
+.text-box {
+  max-width: 500px;
+  width: 50%;
+  background-color: white;
+}
+
+.day {
+  border-bottom: 2px solid;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 4px;
+}
+
+.day ul {
+  margin: 4px;
+  padding: 2px;
+}
+
+.hidden {
+  display: none;
+}
+.date {
+  font-size: 60px;
+  margin-left: 20px;
+}
+
+.plus-icon {
+  border-radius: 200px;
+  width: 60px;
+  height: 60px;
+  background-color: #edeffb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  float: right;
+  margin: 15px 40px;
+}
+
+.margin-40 {
+  margin-bottom: 40px;
+}
+.plus-img {
+  width: 100%;
+  max-width: 40px;
+  max-height: 40px;
+}
+
+.img-holder {
+  width: 500px;
+  height: 400px;
+  overflow: hidden;
+}
+
+.img-holder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: bottom;
+}
+ul {
+  list-style: none;
+}
+
+.flex {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.discard-message-text {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.confirm-close-dialog-btn-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  .flex {
+    display: block;
+    width: 100%;
+  }
+
+  .text-box {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  .plus-icon,
+  .plus-img {
+    display: none;
+  }
+
+  .img-holder {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto 20px;
+  }
+
+  .animated-board {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .flex {
+    display: block;
+    width: 100%;
+  }
+
+  .text-box {
+    width: 100%;
+    margin: 0 auto 40px;
+  }
+
+  .plus-icon,
+  .plus-img {
+    display: none;
+  }
+
+  .img-holder {
+    width: 100%;
+    max-width: 450px;
+    margin: 0 auto 20px;
+  }
+
+  .animated-board {
+    width: 100%;
+  }
+}
