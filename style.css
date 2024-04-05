@@ -122,8 +122,6 @@ ul {
 input[type="checkbox"] {
   width: 20px;
   height: 20px;
-
-  /* Your styles for unchecked checkboxes */
 }
 input {
   display: block;
