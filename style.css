@@ -19,7 +19,6 @@ background: #EDEFFB;
 }
 
 label,
-input,
 textarea,
 button {
   display: block;
@@ -112,11 +111,33 @@ ul {
   align-items: center;
 }
 
+.tick-box {
+}
+
 .discard-message-text {
   font-weight: bold;
   font-size: 1.5rem;
 }
 
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+
+  /* Your styles for unchecked checkboxes */
+}
+
+.task-display li {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: left;
+  border: 2px solid pink;
+}
+
+.task-display h3 {
+  padding: 0;
+  margin: 5px auto;
+}
 .confirm-close-dialog-btn-container {
   display: flex;
   justify-content: center;

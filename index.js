@@ -9,12 +9,6 @@ const newDate = document.getElementById("date");
 const confirmCloseDialog = document.getElementById("confirm-close-dialog");
 const cancelBtn = document.getElementById("cancel");
 const discardBtn = document.getElementById("discard-btn");
-//date chnging everyday  done
-//localstorage
-//push and pop
-// array
-
-//drop down input with title, time(optional), body
 
 const taskDataArray = [];
 
@@ -22,7 +16,7 @@ OpenTaskBtn.addEventListener("click", () => {
   userForm.classList.toggle("hidden");
 });
 
-const date = new Date(); // Example date: April 5, 2024
+const date = new Date();
 
 const dayOfWeek = date.getDay();
 const year = date.getFullYear();
@@ -60,10 +54,6 @@ const monthName = months[monthsOfYear];
 currentDay.textContent = dayName;
 newDate.textContent = currentDate;
 currentYr.textContent = `${monthName} , ${year}`;
-
-// closeTaskBtn.addEventListener("click", () => {
-//   confirmCloseDialogue.showModal();
-// });
 
 closeTaskBtn.addEventListener("click", () => {
   confirmCloseDialog.showModal();
