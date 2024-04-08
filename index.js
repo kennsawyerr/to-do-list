@@ -9,7 +9,9 @@ const newDate = document.getElementById("date");
 const confirmCloseDialog = document.getElementById("confirm-close-dialog");
 const cancelBtn = document.getElementById("cancel");
 const discardBtn = document.getElementById("discard-btn");
-
+//const tickBoxes = document.querySelectorAll('input[type="checkbox"]');
+//const userTaskInput = document.getElementById("user-task-input");
+const taskContainers = document.querySelectorAll(".task-cont");
 const taskDataArray = [];
 
 OpenTaskBtn.addEventListener("click", () => {
@@ -68,4 +70,17 @@ discardBtn.addEventListener("click", () => {
 
 userForm.addEventListener("submit", (e) => {
   preventDefault();
+});
+
+taskContainers.forEach((container) => {
+  const checkbox = container.querySelector('input[type="checkbox"]');
+  const userInput = container.querySelector(".user-task-input");
+
+  checkbox.addEventListener("change", () => {
+    if (checkbox.checked) {
+      userInput.style.textDecoration = "line-through";
+    } else {
+      userInput.style.textDecoration = "none";
+    }
+  });
 });
