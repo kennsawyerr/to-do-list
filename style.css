@@ -109,7 +109,6 @@ ul {
 }
 
 .task-cont {
-  border: 2px solid pink;
   display: flex;
   align-items: center;
   justify-content: space-evenly;

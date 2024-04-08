@@ -1,4 +1,3 @@
-// add task button
 const OpenTaskBtn = document.getElementById("task-btn");
 const closeTaskBtn = document.getElementById("cancel-btn");
 const SaveBtn = document.getElementById("save-btn");
@@ -9,11 +8,9 @@ const newDate = document.getElementById("date");
 const confirmCloseDialog = document.getElementById("confirm-close-dialog");
 const cancelBtn = document.getElementById("cancel");
 const discardBtn = document.getElementById("discard-btn");
-//const tickBoxes = document.querySelectorAll('input[type="checkbox"]');
-//const userTaskInput = document.getElementById("user-task-input");
 const taskContainers = document.querySelectorAll(".task-cont");
 const taskDataArray = [];
-
+const addTaskBtn = document.getElementById("add-task-btn");
 OpenTaskBtn.addEventListener("click", () => {
   userForm.classList.toggle("hidden");
 });
@@ -84,3 +81,13 @@ taskContainers.forEach((container) => {
     }
   });
 });
+
+addTaskBtn.addEventListener("click", () => {
+  //head     document.getElementById("title-input")
+  //date    document.getElementById("date-input")
+  //textarea document.getElementById("description-input")
+  //push to array
+  // array. display to homescreen
+});
+
+// adding directly to the innerText of the screen
